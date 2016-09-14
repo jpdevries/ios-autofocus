@@ -8,12 +8,11 @@
   <p>
     Adding an input with autofocus asyncronously causes iOS 10 VoiceOver to set focus to the field but will not bring up the keyboard :(.
   </p>
-  <div>
-    <script>
-      setTimeout(function(){
-        document.write('<label for="auto">Auto </label><input type="text" id="auto" name="auto" autofocus>');
-      }, 2000);
-    </script>
-  </div>
+  <div id="wrapper"></div>
+  <script>
+    setTimeout(function(){
+      document.getElementById('wrapper').innerHTML = ('<label for="auto">Auto </label><input type="text" id="auto" name="auto" autofocus>');
+    }, 2000);
+  </script>
 </body>
 </html>
