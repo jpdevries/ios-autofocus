@@ -5,6 +5,10 @@
   <title>iOS 10 auto focus bug?</title>
 </head>
 <body>
-  <label for="auto">Auto </label><input type="text" id="auto" name="auto" autofocus>
+  <script>
+    setInterval(function(){
+      document.write('<label for="auto">Auto </label><input type="text" id="auto" name="auto" autofocus>');
+    }, 2000);
+  </script>
 </body>
 </html>
